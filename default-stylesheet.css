@@ -12,6 +12,16 @@ font-weight: normal;
 src: local('PFDinTextPro-Bold'), url('fonts/PFDinTextPro-Bold.woff') format('woff');
 }
 
+   
+@keyframes smooth-fade-in {   
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
 h3 {
     font-size: 2rem;
 }

@@ -16,6 +16,7 @@ body {
 }
 
 form {
+    animation: smooth-fade-in 1s;
     width: 500px;
     position: fixed;
     top:50%;
@@ -53,6 +54,7 @@ form input[type='submit']{
 }
 
 #start-container {
+    animation: smooth-fade-in 1s;
     width: 300px;
     display: none;
     position: fixed;
@@ -73,6 +75,40 @@ form input[type='submit']{
     border: solid 1px white;
     border-radius: 15px;
 }
+
+/* #options-container {
+    position: fixed;
+    top: 5%;
+    right: 20px;   
+    color: white;
+}
+#options-container div {
+    text-align: center;
+    display: none;
+}
+#options-container p {
+    font-size: 0.9rem;
+}
+*/
+
+
+#logout-container {
+    animation: smooth-fade-in 1s;
+    position: fixed;
+    top: 5%;
+    right: 20px;
+    display: none;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+#logout-container img[src='images/hoyo-logo.png.png'] {
+    width: 32px;
+    height: 32px;
+} 
+
+
 
 
 
