@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@font-face {
+    font-family: 'PFDinTextPro-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PFDinTextPro-Regular'), url('fonts/PFDinTextPro-Regular.woff') format('woff');
+}
+@font-face {
+font-family: 'PFDinTextPro-Bold';
+font-style: normal;
+font-weight: normal;
+src: local('PFDinTextPro-Bold'), url('fonts/PFDinTextPro-Bold.woff') format('woff');
+}
+
+   
+@keyframes smooth-fade-in {   
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.7rem;
+}
+h5 {
+    font-size: 1.5rem;
+}
+h6 {
+    font-size: 1.2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    z-index: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin';
+}
+::placeholder {
+    color: rgb(193, 193, 193);
+}
