@@ -19,7 +19,8 @@
 /* | Background Video */
 body {
     animation: Lighten 1s;
-    overflow: hidden;    
+    overflow: hidden; 
+    background-color: black;   
 }
 #bg-video {
     position: sticky;
