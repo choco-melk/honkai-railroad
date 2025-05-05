@@ -15,6 +15,7 @@ body {
     overflow: hidden;
 }
 
+/* | Login and Register Forms */
 form {
     animation: smooth-fade-in 1s;
     width: 500px;
@@ -53,10 +54,14 @@ form input[type='submit']{
     cursor: pointer;
 }
 
+/* | Start Section */
 #start-container {
     animation: smooth-fade-in 1s;
     width: 300px;
     display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 80%;
     left: 50%; 
@@ -67,30 +72,19 @@ form input[type='submit']{
 }
 #start-container h4 {
     margin: 10px;
+    cursor: pointer;
 }
 #start-container #account-container {
+    width: 25ch;
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
+    text-align: center;
     justify-content: center;
     padding: 0.2em 0.5em;
     border: solid 1px white;
     border-radius: 15px;
+    cursor: pointer;
 }
-
-/* #options-container {
-    position: fixed;
-    top: 5%;
-    right: 20px;   
-    color: white;
-}
-#options-container div {
-    text-align: center;
-    display: none;
-}
-#options-container p {
-    font-size: 0.9rem;
-}
-*/
-
 
 #logout-container {
     animation: smooth-fade-in 1s;
@@ -103,7 +97,7 @@ form input[type='submit']{
     text-align: center;
     cursor: pointer;
 }
-#logout-container img[src='../images/hoyo-logo.png.png'] {
+#logout-container img[src='images/hoyo-logo.png.png'] {
     width: 32px;
     height: 32px;
 } 

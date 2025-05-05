@@ -1,0 +1,95 @@
+@import url(default-stylesheet.css);
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 5px;
+    }
+}
+@keyframes Lighten {
+    0% {
+      filter: brightness(0%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
+
+/* | Background Video */
+body {
+    animation: Lighten 1s;
+    overflow: hidden;    
+}
+#bg-video {
+    position: sticky;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -3;
+    overflow: hidden;
+}
+.darken  {
+    filter: brightness(10%);
+}
+
+/* | Character Selection Title */
+#character-selection-title-section {
+    width: 100vh;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+#confirm-button {
+    width: 200px;
+    display: none;
+    padding: 0.5em 0.6em;
+    border: solid 1px white;
+    border-radius: 15px;
+    margin: 10px auto 0px;
+    background-color: transparent;
+    color: white;
+    font-size: 0.9rem;
+    z-index: 2;
+    cursor: pointer;
+}
+
+
+
+/*  | Character Selection Section */
+#character-selection-section {
+    width: 100vw;
+    position: fixed;
+    top: 55vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+#character-selection-section figure {
+    width: 300px;
+    filter: brightness(75%);
+    transition: transform 0.2s, filter 0.2s;
+    cursor: pointer;
+}
+#character-selection-section figure:hover{
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+#character-selection-section img {
+    position: relative;
+    animation: MoveUpDown 1.8s linear infinite;
+    height: 550px;
+    width: auto;
+}
+#character-selection-section figure:first-of-type {
+    margin-right: 30vh;
+}
+#character-selection-section figcaption {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
