@@ -6,10 +6,10 @@
     src: local('PFDinTextPro-Regular'), url('fonts/PFDinTextPro-Regular.woff') format('woff');
 }
 @font-face {
-font-family: 'PFDinTextPro-Bold';
-font-style: normal;
-font-weight: normal;
-src: local('PFDinTextPro-Bold'), url('fonts/PFDinTextPro-Bold.woff') format('woff');
+    font-family: 'PFDinTextPro-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PFDinTextPro-Bold'), url('fonts/PFDinTextPro-Bold.woff') format('woff');
 }
 
    
@@ -19,6 +19,22 @@ src: local('PFDinTextPro-Bold'), url('fonts/PFDinTextPro-Bold.woff') format('wof
     }
     100% {
         opacity: 100%;
+    }
+}
+@keyframes move-up-down {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 3px;
+    }
+}
+@keyframes lighten {
+    0% {
+      filter: brightness(0%);
+    }
+    100% {
+        filter: brightness(100%);
     }
 }
 

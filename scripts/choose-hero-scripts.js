@@ -7,8 +7,8 @@ const caelus = document.getElementById('character-caelus');
 /* || States */
 let starterChar = '';
 
-/* | Functions */
-/* || EVENTLISTENERS */
+/* | FUNCTIONS */
+/* || Event Listeners */
 stelle.addEventListener('click', e => {
     e.preventDefault();
     title.innerText = "Selecting Trailblazer Stelle";

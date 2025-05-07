@@ -1,28 +1,13 @@
 @import url(default-stylesheet.css);
-@keyframes MoveUpDown {
-    0%, 100% {
-      bottom: 0;
-    }
-    50% {
-      bottom: 5px;
-    }
-}
-@keyframes Lighten {
-    0% {
-      filter: brightness(0%);
-    }
-    100% {
-        filter: brightness(100%);
-    }
-}
+
 
 /* | Background Video */
 body {
-    animation: Lighten 1s;
+    animation: lighten 1s;
     overflow: hidden; 
     background-color: black;   
 }
-#bg-video {
+#bg-img {
     position: sticky;
     height: 100vh;
     object-fit: cover;
@@ -30,7 +15,7 @@ body {
     overflow: hidden;
 }
 .darken  {
-    filter: brightness(10%);
+    filter: brightness(20%);
 }
 
 /* | Character Selection Title */
@@ -61,17 +46,17 @@ body {
 
 /*  | Character Selection Section */
 #character-selection-section {
-    width: 100vw;
+    width: 100%;
     position: fixed;
     top: 55vh;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
-    justify-content: center;
+    justify-content: center
 }
 #character-selection-section figure {
-    width: 300px;
-    filter: brightness(75%);
+    width: 580px;
+    filter: brightness(70%);
     transition: transform 0.2s, filter 0.2s;
     cursor: pointer;
 }
@@ -80,17 +65,14 @@ body {
     filter: brightness(100%);
 }
 #character-selection-section img {
+    animation: move-up-down 1.5s linear infinite;
     position: relative;
-    animation: MoveUpDown 1.8s linear infinite;
-    height: 550px;
+    height: 580px;
     width: auto;
 }
-#character-selection-section figure:first-of-type {
-    margin-right: 30vh;
-}
 #character-selection-section figcaption {
-    width: 100%;
-    text-align: center;
-    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
     color: white;
 }

@@ -1,0 +1,156 @@
+@import url(default-stylesheet.css);
+
+/* | Background */
+body {
+    background-color: black;
+    overflow: hidden;    
+}
+.darken {
+    filter: brightness(50%);
+}
+#bg-img {
+    position: sticky;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -3;
+    overflow: hidden;
+}
+
+/* | Login and Register Forms */
+form {
+    animation: smooth-fade-in 1s;
+    width: 500px;
+    position: fixed;
+    top:50%;
+    left:50%; 
+    transform:translate(-50%, -50%);
+    padding: 1em 3em 3em; 
+    background-color: #f0ecec;
+}
+form h4 {
+    text-align: center;
+    letter-spacing: 3px;
+}
+form input[type='text'], form input[type='password'] {
+    border: solid 1px rgb(193, 193, 193);
+    padding: 0.8em 1em;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 1.0em;
+    font-weight: 600;
+    color: rgb(129, 129, 129);
+}
+form label a{
+    color: #ffbf49;
+    font-weight: 800; 
+    text-decoration: none;
+}
+form input[type='submit']{
+    padding: 0.8em 1em;
+    width: 100%;
+    font-size: 1.0em;
+    font-weight: 600;
+    background-color: #ffd484;
+    color: black;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    form {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+    }
+    form h4 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    form input[type='text'], form input[type='password'], form input[type='submit']{
+        padding: 0.4em 0.5em;
+        margin-bottom: 5px;
+        font-size: 0.85rem;
+    }
+    form label a {
+        font-size: 0.8rem;
+    }
+    form br {
+        display: none;
+    }
+    form input[type='submit'] {
+        margin-top: 20px;
+    }
+    
+
+
+}
+/* | Start Section */
+#start-container {
+    animation: smooth-fade-in 1s;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 80%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    padding: 1em 3em 3em; 
+    text-align: center;
+    color: white;
+}
+#start-container h4 {
+    margin: 10px;
+    cursor: pointer;
+}
+#start-container #account-container {
+    width: 25ch;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0.4em 0.5em;
+    border: solid 1px white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#account-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#account-container img[src='images/icon-images/check-mark.png']{
+    height: 16px;
+    aspect-ratio: 1/1;
+    margin-right: 7px;
+}
+
+
+#logout-container {
+    animation: smooth-fade-in 1s;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+#logout-container img[src='images/icon-images/hoyo-logo.png.png'] {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+} 
+
+
+
+
+
+
