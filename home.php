@@ -1,0 +1,113 @@
+<?php
+    session_start();
+    @include('DBConnector.php');
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='stylesheets/home-stylesheets.css'>
+    <title>Home Page</title>
+</head>
+<body>
+    <img id='bg-img' class='darken' width='100%' height='auto' src='images/bg-images/hsr-map-bg.jpg'>
+
+    <section id='user-status'>
+        <figure>
+            <img id='user-pp-image' src='images/pfp-images/sparkle-pfp.webp'>
+        </figure>
+        <section>
+            <h3 id='user-name'>
+                <?php echo $_SESSION['username'];?>
+            </h3>
+            <div id='user-exp-container'>
+                <h6>Lv: <span id='user-lv'>1</span></h6>
+                <h6>Exp: <span id='user-exp'>0/10</span></h6>
+            </div>
+        </section>
+    </section>
+
+    <section id='user-resources'>
+        <div id='normal-warp-container'>
+            <figure>
+                <img src='images/resource-images/normal-warp.webp'>
+            </figure>
+            <p id='normal-warp-count'>0</p>
+        </div>
+        <div id='special-warp-container'>
+            <figure>
+                <img src='images/resource-images/special-warp.webp'>
+            </figure>
+            <p id='special-warp-count'>0</p>
+        </div>
+        <div id='stellar-jade-container'>
+            <figure>
+                <img src='images/resource-images/stellar-jade.webp'>
+            </figure>
+            <p id='stellar-jade-count'>3200</p>
+        </div>
+    </section>
+    
+    <section id='planets'>
+        <figure id='herta-space-station' >
+            <img src='images/planet-images/herta-station.png'>
+            <div class='fancy-golden-border'></div>
+            <figcaption>Herta Space Station</figcaption>
+            <div class='fancy-golden-border'></div>
+        </figure>
+        <figure id='jarilo-vi'>
+            <img src='images/planet-images/jarilo-vi.png'>
+            <div class='fancy-golden-border'></div>
+            <figcaption>Jarilo VI</figcaption>
+            <div class='fancy-golden-border'></div>
+        </figure>
+        <figure id='xianzhou-luofu'>
+            <img src='images/planet-images/xianzhou-luofu.png'>
+            <div class='fancy-golden-border'></div>
+            <figcaption>Xianzhou Luofu</figcaption>
+            <div class='fancy-golden-border'></div>
+        </figure>
+        <figure id='penacony'>
+            <img src='images/planet-images/penacony.png'>
+            <div class='fancy-golden-border'></div>
+            <figcaption>Penacony</figcaption>
+            <div class='fancy-golden-border'></div>
+        </figure>
+        <figure id='amphoreus'>
+            <img src='images/planet-images/amphoreus.png'>
+            <div class='fancy-golden-border'></div>
+            <figcaption>Amphoreus</figcaption>
+            <div class='fancy-golden-border'></div>
+        </figure>
+    </section>
+
+    <section id='home-navigation'>
+        <div class='navigation'>
+            <figure class='navigation-container'>
+                <img src='images/icon-images/character-icon.png'>
+                <figcaption>Characters</figcaption>
+            </figure>
+        </div>
+        <div class='navigation'>
+            <figure class='navigation-container'>
+                <img src='images/icon-images/lineup-icon.png'>
+                <figcaption>Lineup</figcaption>
+            </figure>
+        </div>
+        <div class='navigation'>
+            <figure class='navigation-container'>
+                <img src='images/icon-images/warp-icon.png'>
+                <figcaption>Warp</figcaption>
+            </figure>
+        </div>
+        <div class='navigation' id='logout-navigation'>
+            <figure class='navigation-container'>
+                <img src='images/icon-images/logout-icon.png'>
+                <figcaption>Log out</figcaption>
+            </figure>
+        </div>
+    </section>
+</body>
+<script src='scripts/home-scripts.js'></script>
+</html>
