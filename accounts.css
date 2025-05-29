@@ -116,12 +116,7 @@ form input[type='submit']{
     color: black;
     cursor: pointer;
 }
-#login {
-    display: block;
-}
-#register {
-    display: none;
-}
+
 @media screen and (max-width: 768px){
     form {
         position: fixed;
