@@ -1,0 +1,538 @@
+@font-face {
+    font-family: "DIN";
+    src: url("https://db.onlinewebfonts.com/t/43c793eb9fcfce5efd986389cceb93d0.eot");
+    src: url("https://db.onlinewebfonts.com/t/43c793eb9fcfce5efd986389cceb93d0.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/43c793eb9fcfce5efd986389cceb93d0.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/43c793eb9fcfce5efd986389cceb93d0.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/43c793eb9fcfce5efd986389cceb93d0.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/43c793eb9fcfce5efd986389cceb93d0.svg#DIN")format("svg");
+}
+
+@keyframes smooth-fade {   
+    0% {
+        transform: translateY(100px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+html {
+    cursor: url('assets/cursor/starrail_arrow.cur'), auto;
+}
+
+@keyframes fade-in {   
+    0% {
+        display: block;
+        opacity: 100%;
+    }
+    100% {
+        display: none;
+        opacity: 0%;
+    }
+}
+
+@keyframes fade-out {   
+    0% {
+        display: block;
+        opacity: 0%;
+    }
+    100% {
+        display: none;
+        opacity: 100%;
+    }
+}
+
+#opening-animation {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: black;
+    animation: fade-in 0.5s;
+    animation-fill-mode: forwards;
+}
+
+body, body * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+}
+
+body {
+    background-image: url("assets/background/space2.png");
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+}
+h1, h2, h3, h4 {
+    font-family: 'DIN';
+}
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3, label {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.2rem;
+}
+
+/* Sections */
+#choose-char-section {
+    padding-top: 7.5em;  
+    padding-bottom: 5em; 
+    display: block;
+}
+#content-section {
+    display: none;
+}
+
+/* Document Styles */
+#body-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: black;
+    opacity: 50%;
+}
+
+header {
+    width: 45%;
+    height: 120px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    align-items: start;
+    padding: 1em 2em;
+    background-image: url("assets/background/space2.png");
+    background-size: cover;
+    background-attachment: fixed;
+    
+    #top-header{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid rgb(192, 192, 192);
+        padding-bottom: 20px;
+    }
+    #header-overlay {
+        width: 45%;
+        height: inherit;
+        position: fixed;
+        top: 0;
+        left: 0;    
+        z-index: -1;
+        background-color: black;
+        opacity: 65%;
+        
+    }
+    #logo-container {
+        display: flex;
+        justify-content: left;
+        margin-top: 10px;
+        h4 {
+            color: rgb(239, 210, 154);
+        }
+        h3 {
+            font-size: 1.6rem;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    img[src='assets/navigation/inarchive.png'] {
+        height: 48px;
+        aspect-ratio: 1/1;
+        margin-left: 1em;
+        margin-right: 10px;
+        
+    }   
+    #search-bar{
+        width: 40ch;
+        margin-top: 10px;
+        padding: 0.5em 1em;
+        border-radius: 25px;
+        font-size: 1.1em;
+        font-family: 'DIN';
+        cursor: url('assets/cursor/starrail_helpsel.cur'), auto;
+
+    }    
+}
+
+
+#filter-overlay {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.527);
+    display: none;
+    
+}
+#filter-navigation {
+    z-index: 4;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #d6d5da;
+    color: black;
+    display: none;
+    width: 800px;
+    border-top-right-radius: 50px;
+
+    .filters{
+        display: flex;
+    }
+
+    #filter-paths, #filter-types{
+        margin-top: 1em;
+        padding: 1em;
+        width: 50%;
+    }
+    .filter-option {
+        /* border: 1px solid black; */
+        background-color: #ecedef;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 10px 0px;
+        margin-bottom: 10px;
+        filter: brightness(100%);
+        cursor: pointer;
+    }  
+    .filter-option:hover, .filter-option *:hover {
+        cursor: url('assets/cursor/starrail_helpsel.cur'), auto;
+    }
+    
+    .filter-option img {
+        height: 34px;    
+        aspect-ratio: 1/1;
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+    }
+
+    .filter-buttons {
+        display: flex;
+        background-color: #262626;
+        justify-content: space-between;
+        width: 100%;
+        height: 64px;   
+        cursor: pointer;
+        padding: 0.5em;
+        padding-left: 20%;
+        padding-right: 20%;
+        #clear{
+            background-color: #ecedef;
+            /* border: 1px solid black;  */
+        }
+        #apply{
+            background-color: #ecedef;
+            /* border: 1px solid black;  */
+        }
+    }
+
+    input[type=checkbox] {
+        display: block; 
+        position: absolute; /*or fixed*/
+        margin: 1em;
+        transform: scale(1.5);
+        right: 0;
+    }
+}
+
+#char-selection-container {
+    top: 0;
+    position: relative;
+    overflow-y: scroll;
+    width: 45%;
+    height: 720px;
+    #char-overlay {
+        width: 45%;
+        height: 100%;
+        position: fixed;
+        left: 0;    
+        z-index: -1;
+        background-color: black;
+        opacity: 30%;
+        
+    }
+}
+
+#char-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 200px);
+    width: 100%;
+    padding-left: 30px;
+    figure {
+        position: relative;
+        animation: smooth-fade 1.7s ease 1;
+        /* border: 1px solid white ; */
+        padding-top: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 5px;
+        width: 200px;
+        aspect-ratio: 1/1 ; 
+        justify-content: space-between;
+        align-items: center;
+        filter: brightness(60%); 
+        font-family: 'DIN';
+        transition: transform 0.3s;
+        text-shadow:
+        0.04em 0 rgb(41, 41, 41),
+        0 0.04em  rgb(41, 41, 41),
+        -0.04em 0  rgb(41, 41, 41),
+        0 -0.04em  rgb(41, 41, 41);
+    }
+    
+    figure:hover {
+        filter: brightness(80%);
+        transform: scale(1.05);
+    }
+    figure:hover, figure *:hover {
+        cursor: url('assets/cursor/starrail_helpsel.cur'), auto;
+    }
+
+    .filtered .icon {
+        filter: grayscale(100%);
+    }
+    .selected {
+        filter: none !important;
+        pointer-events: none;
+    }
+    img {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    #char-list{
+        display: flex;
+        img {
+            width: 32px;
+            display: block; 
+            position: absolute; /*or fixed*/
+            right: 0;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+footer {
+    width: 45%;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    align-items: start;
+    padding: 1em 2em;
+    background-image: url("assets/background/space2.png");
+    background-size: cover;
+    background-attachment: fixed;
+    mask-image: linear-gradient(transparent,black 25% );
+    
+    #footer-overlay {
+        width: 45%;
+        height: inherit;
+        position: fixed;
+        bottom: 0;
+        left: 0;    
+        z-index: -1;
+        background-color: black;
+        opacity: 65%;
+        
+    }
+
+    #filter-container {
+        /* border: 3px solid white; */
+        margin-top: .8em;
+        margin-left: 0.5em;
+        position: relative;
+        
+        img {
+            z-index: 5;
+            border-radius: 25px;
+            height: 52px;
+            aspect-ratio: 1/1;
+            /* border: 3px solid rgba(255, 255, 255, 0); */
+            
+        }
+        img:hover {
+            /* border: 3px solid white; */
+            cursor: url('assets/cursor/starrail_helpsel.cur'), auto;
+        }
+    }
+
+    
+}
+
+.dropdown {
+    z-index: 2;
+    position: fixed;
+    width: 22.5%;
+    bottom: 1em;
+    left: 22.5%;
+    
+    #dropbtn {
+        height: 32px;
+        width: 85%;
+        cursor: url('assets/cursor/starrail_helpsel.cur'), auto;
+    }
+
+    #dropdown-content {
+        display: none;
+        color: black;
+        padding: 0.2em;
+        position: absolute;
+        margin-left: 0;
+        bottom: 160%;
+        background-color: #f9f9f9;
+        width: 85%;
+        z-index: 3; 
+        
+        h4 {
+            padding: 0.2em;
+            cursor: url('assets/cursor/starrail_helpsel.cur'), auto;
+            /* border: 3px solid pink; */
+        }
+        .selected{
+            pointer-events: none;
+            background-color: #ebebeb !important;
+        }
+    } 
+    
+}
+
+    
+
+/* Hero Selection Styles */
+#char-selected {
+    display: none;
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 125vh;
+    padding: 1em;
+    justify-content: right;
+    text-align: right   ;
+    mask-image: linear-gradient(to right, transparent,black 20% );
+
+}
+
+#char-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: block; 
+    background-size: auto; 
+    background-position: 10%;
+    background-repeat: no-repeat;
+    right:0;    
+    letter-spacing: 0.1em;
+
+    #char-name {
+        position: relative;
+        margin-left: 10%;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: white;
+    
+    }
+
+    #char-faction {
+        position: relative;
+        margin-left: 10%;
+        right: 0;
+        font-size: 1.5rem;
+        margin-bottom: 0.5em;
+        color: #9e9e9e;
+    }
+
+    #path-text, #attack-type-text {
+        filter: none !important;
+        position: relative;
+        margin-left: 10%;
+        font-weight: bold;
+        color: #aaa; 
+        font-style: italic;
+        padding-top: 0.5em;
+    }
+
+    #attack-type-image, #primary-path-image {
+        filter: none !important;
+        position: relative;
+        width:24px;     
+        aspect-ratio: 1/1;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    #attack-type, #primary-path  {
+        position: absolute;
+        margin-left: 85%;
+        right: 0;
+        display: flex;
+       
+    }
+    
+}
+
+
+#navigation {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    margin-right: 3em;
+    margin-bottom: 3em;
+    width: 90px;
+    height: 90px;
+    background-color: #100c14;
+    filter: brightness(100%);
+    cursor: url('assets/cursor/starrail_helpsel.cur'), auto;
+    transition: filter 0.2s;
+    img {
+        width: 40px;
+        aspect-ratio: 1/1;
+    }
+    figcaption {
+        font-size: 0.75em;
+    }
+}
+#navigation:hover {
+    filter: brightness(135%);
+}
+.navigation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    border: solid 1px #c0ae82c9;
+}
+

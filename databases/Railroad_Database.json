@@ -1,0 +1,783 @@
+[
+    {
+        "id": 1,
+        "name": "Stelle",
+        "type": [
+            "physical",
+            "fire",
+            "imaginary",
+            "ice"
+        ],
+        "path": [
+            "destruction",
+            "preservation",
+            "harmony",
+            "remembrance"
+        ], 
+        "faction": [
+            "astral_express",
+            "stellaron_hunters",
+            "penacony",
+            "amphoreus"
+        ],
+        "img": [
+            "assets/image/1/1.webp",
+            "assets/image/1/2.webp",
+            "assets/image/1/3.webp",
+            "assets/image/1/4.webp"
+        ],
+        "icon": [
+            "assets/icon/1/1.webp",
+            "assets/icon/1/2.webp",
+            "assets/icon/1/3.webp",
+            "assets/icon/1/4.webp"
+        ],
+        "eidolon": [
+            "assets/eidolon/1/1.webp",
+            "assets/eidolon/1/2.webp",
+            "assets/eidolon/1/3.webp",
+            "assets/eidolon/1/4.webp"
+        ],
+        "lightcone": [
+            "assets/lightcone/1/1.webp",
+            "assets/lightcone/1/2.webp",
+            "assets/lightcone/1/3.webp",
+            "assets/lightcone/1/4.webp"
+        ]
+    },
+    {
+        "id": 2,
+        "name": "March 7th",
+        "type": [
+            "ice",
+            "imaginary"
+        ],
+        "path": [
+            "preservation",
+            "hunt"
+        ],
+        "faction": [
+            "astral_express",
+            "xianzhou_wardance"
+        ],
+        "img": [
+            "assets/image/2/1.webp",
+            "assets/image/2/2.webp"
+        ],
+        "icon": [
+            "assets/icon/2/1.webp",
+            "assets/icon/2/2.webp"
+        ],
+        "eidolon": [
+            "assets/eidolon/2/1.webp",
+            "assets/eidolon/2/2.webp"
+        ],
+        "lightcone": [
+            "assets/lightcone/2/1.webp",
+            "assets/lightcone/2/2.webp"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Dan Heng",
+        "type": [
+            "wind",
+            "imaginary"
+        ],
+        "path": [
+            "hunt",
+            "destruction"
+        ],
+        "faction": [
+            "astral_express",
+            "high_cloud_quintet"
+        ],
+        "img": [
+            "assets/image/3/1.webp",
+            "assets/image/3/2.webp"
+        ],
+        "icon": [
+            "assets/icon/3/1.webp",
+            "assets/icon/3/2.webp"
+        ],
+        "eidolon": [
+            "assets/eidolon/3/1.webp",
+            "assets/eidolon/3/2.webp"
+        ],
+        "lightcone": [
+            "assets/lightcone/3/1.webp",
+            "assets/lightcone/3/2.webp"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Himeko",
+        "type": "fire",
+        "path": "erudition",
+        "faction": "astral_express",
+        "img": "assets/image/4.webp",
+        "icon": "assets/icon/4.webp",
+        "eidolon": "assets/eidolon/4.webp",
+        "lightcone": "assets/lightcone/4.webp"
+    },
+    {
+        "id": 5,
+        "name": "Welt",
+        "type": "imaginary",
+        "path": "erudition",
+        "faction": "astral_express",
+        "img": "assets/image/5.webp",
+        "icon": "assets/icon/5.webp",
+        "eidolon": "assets/eidolon/5.webp",
+        "lightcone": "assets/lightcone/5.webp"
+    },
+    {
+        "id": 6,
+        "name": "Arlan",
+        "type": "lightning",
+        "path": "destruction",
+        "faction": "herta_space_station",
+        "img": "assets/image/6.webp",
+        "icon": "assets/icon/6.webp",
+        "eidolon": "assets/eidolon/6.webp",
+        "lightcone": "assets/lightcone/6.webp"
+    },
+    {
+        "id": 7,
+        "name": "Asta",
+        "type": "fire",
+        "path": "harmony",
+        "faction": "herta_space_station",
+        "img": "assets/image/7.webp",
+        "icon": "assets/icon/7.webp",
+        "eidolon": "assets/eidolon/7.webp",
+        "lightcone": "assets/lightcone/7.webp"
+    },
+    {
+        "id": 8,
+        "name": "Herta",
+        "type": "ice",
+        "path": "erudition",
+        "faction": "herta_space_station",
+        "img": "assets/image/8.webp",
+        "icon": "assets/icon/8.webp",
+        "eidolon": "assets/eidolon/8.webp",
+        "lightcone": "assets/lightcone/8.webp"
+    },
+    {
+        "id": 9,
+        "name": "Sampo",
+        "type": "wind",
+        "path": "nihility",
+        "faction": "outside_forces",
+        "img": "assets/image/9.webp",
+        "icon": "assets/icon/9.webp",
+        "eidolon": "assets/eidolon/9.webp",
+        "lightcone": "assets/lightcone/9.webp"
+    },
+    {
+        "id": 10,
+        "name": "Natasha",
+        "type": "physical",
+        "path": "abundance",
+        "faction": "belobog_underworld",
+        "img": "assets/image/10.webp",
+        "icon": "assets/icon/10.webp",
+        "eidolon": "assets/eidolon/10.webp",
+        "lightcone": "assets/lightcone/10.webp"
+    },
+    {
+        "id": 11,
+        "name": "Serval",
+        "type": "lightning",
+        "path": "erudition",
+        "faction": "belobog_overworld",
+        "img": "assets/image/11.webp",
+        "icon": "assets/icon/11.webp",
+        "eidolon": "assets/eidolon/11.webp",
+        "lightcone": "assets/lightcone/11.webp"
+    },
+    {
+        "id": 12,
+        "name": "Pela",
+        "type": "ice",
+        "path": "nihility",
+        "faction": "belobog_overworld",
+        "img": "assets/image/12.webp",
+        "icon": "assets/icon/12.webp",
+        "eidolon": "assets/eidolon/12.webp",
+        "lightcone": "assets/lightcone/12.webp"
+    },
+    {
+        "id": 13,
+        "name": "Hook",
+        "type": "fire",
+        "path": "destruction",
+        "faction": "belobog_underworld",
+        "img": "assets/image/13.webp",
+        "icon": "assets/icon/13.webp",
+        "eidolon": "assets/eidolon/13.webp",
+        "lightcone": "assets/lightcone/13.webp"
+    },
+    {
+        "id": 14,
+        "name": "Tingyun",
+        "type": "lightning",
+        "path": "harmony",
+        "faction": "local_xianzhou",
+        "img": "assets/image/14.webp",
+        "icon": "assets/icon/14.webp",
+        "eidolon": "assets/eidolon/14.webp",
+        "lightcone": "assets/lightcone/14.webp"
+    },
+    {
+        "id": 15,
+        "name": "Sushang",
+        "type": "physical",
+        "path": "hunt",
+        "faction": "ghost_hunting_squad",
+        "img": "assets/image/15.webp",
+        "icon": "assets/icon/15.webp",
+        "eidolon": "assets/eidolon/15.webp",
+        "lightcone": "assets/lightcone/15.webp"
+    },
+    {
+        "id": 16,
+        "name": "Qingque",
+        "type": "quantum",
+        "path": "erudition",
+        "faction": "local_xianzhou",
+        "img": "assets/image/16.webp",
+        "icon": "assets/icon/16.webp",
+        "eidolon": "assets/eidolon/16.webp",
+        "lightcone": "assets/lightcone/16.webp"
+    },
+    {
+        "id": 17,
+        "name": "Bronya",
+        "type": "wind",
+        "path": "harmony",
+        "faction": "belobog_overworld",
+        "img": "assets/image/17.webp",
+        "icon": "assets/icon/17.webp",
+        "eidolon": "assets/eidolon/17.webp",
+        "lightcone": "assets/lightcone/17.webp"
+    },
+    {
+        "id": 18,
+        "name": "Clara",
+        "type": "physical",
+        "path": "destruction",
+        "faction": "belobog_underworld",
+        "img": "assets/image/18.webp",
+        "icon": "assets/icon/18.webp",
+        "eidolon": "assets/eidolon/18.webp",
+        "lightcone": "assets/lightcone/18.webp"
+    },
+    {
+        "id": 19,
+        "name": "Gepard",
+        "type": "ice",
+        "path": "preservation",
+        "faction": "belobog_overworld",
+        "img": "assets/image/19.webp",
+        "icon": "assets/icon/19.webp",
+        "eidolon": "assets/eidolon/19.webp",
+        "lightcone": "assets/lightcone/19.webp"
+    },
+    {
+        "id": 20,
+        "name": "Yanqing",
+        "type": "ice",
+        "path": "hunt",
+        "faction": "xianzhou_wardance",
+        "img": "assets/image/20.webp",
+        "icon": "assets/icon/20.webp",
+        "eidolon": "assets/eidolon/20.webp",
+        "lightcone": "assets/lightcone/20.webp"
+    },
+    {
+        "id": 21,
+        "name": "Bailu",
+        "type": "lightning",
+        "path": "abundance",
+        "faction": "high_cloud_quintet",
+        "img": "assets/image/21.webp",
+        "icon": "assets/icon/21.webp",
+        "eidolon": "assets/eidolon/21.webp",
+        "lightcone": "assets/lightcone/21.webp"
+    },
+    {
+        "id": 22,
+        "name": "Seele",
+        "type": "quantum",
+        "path": "hunt",
+        "faction": "belobog_underworld",
+        "img": "assets/image/22.webp",
+        "icon": "assets/icon/22.webp",
+        "eidolon": "assets/eidolon/22.webp",
+        "lightcone": "assets/lightcone/22.webp"
+    },
+    {
+        "id": 23,
+        "name": "Jing Yuan",
+        "type": "lightning",
+        "path": "erudition",
+        "faction": "high_cloud_quintet",
+        "img": "assets/image/23.webp",
+        "icon": "assets/icon/23.webp",
+        "eidolon": "assets/eidolon/23.webp",
+        "lightcone": "assets/lightcone/23.webp"
+    },
+    {
+        "id": 24,
+        "name": "Yukong",
+        "type": "imaginary",
+        "path": "harmony",
+        "faction": "local_xianzhou",
+        "img": "assets/image/24.webp",
+        "icon": "assets/icon/24.webp",
+        "eidolon": "assets/eidolon/24.webp",
+        "lightcone": "assets/lightcone/24.webp"
+    },
+    {
+        "id": 25,
+        "name": "Silver Wolf",
+        "type": "quantum",
+        "path": "nihility",
+        "faction": "stellaron_hunters",
+        "img": "assets/image/25.webp",
+        "icon": "assets/icon/25.webp",
+        "eidolon": "assets/eidolon/25.webp",
+        "lightcone": "assets/lightcone/25.webp"
+    },
+    {
+        "id": 26,
+        "name": "Loucha",
+        "type": "imaginary",
+        "path": "abundance",
+        "faction": "foreign_xianzhou",
+        "img": "assets/image/26.webp",
+        "icon": "assets/icon/26.webp",
+        "eidolon": "assets/eidolon/26.webp",
+        "lightcone": "assets/lightcone/26.webp"
+    },
+    {
+        "id": 27,
+        "name": "Luka",
+        "type": "physical",
+        "path": "nihility",
+        "faction": "belobog_underworld",
+        "img": "assets/image/27.webp",
+        "icon": "assets/icon/27.webp",
+        "eidolon": "assets/eidolon/27.webp",
+        "lightcone": "assets/lightcone/27.webp"
+    },
+    {
+        "id": 28,
+        "name": "Blade",
+        "type": "wind",
+        "path": "destruction",
+        "faction": "stellaron_hunters",
+        "img": "assets/image/28.webp",
+        "icon": "assets/icon/28.webp",
+        "eidolon": "assets/eidolon/28.webp",
+        "lightcone": "assets/lightcone/28.webp"
+    },
+    {
+        "id": 29,
+        "name": "Kafka",
+        "type": "lightning",
+        "path": "nihility",
+        "faction": "stellaron_hunters",
+        "img": "assets/image/29.webp",
+        "icon": "assets/icon/29.webp",
+        "eidolon": "assets/eidolon/29.webp",
+        "lightcone": "assets/lightcone/29.webp"
+    },
+    {
+        "id": 30,
+        "name": "Lynx",
+        "type": "quantum",
+        "path": "abundance",
+        "faction": "belobog_overworld",
+        "img": "assets/image/30.webp",
+        "icon": "assets/icon/30.webp",
+        "eidolon": "assets/eidolon/30.webp",
+        "lightcone": "assets/lightcone/30.webp"
+    },
+    {
+        "id": 31,
+        "name": "Fu Xuan",
+        "type": "quantum",
+        "path": "preservation",
+        "faction": "local_xianzhou",
+        "img": "assets/image/31.webp",
+        "icon": "assets/icon/31.webp",
+        "eidolon": "assets/eidolon/31.webp",
+        "lightcone": "assets/lightcone/31.webp"
+    },
+    {
+        "id": 32,
+        "name": "Guinaifen",
+        "type": "fire",
+        "path": "nihility",
+        "faction": "ghost_hunting_squad",
+        "img": "assets/image/32.webp",
+        "icon": "assets/icon/32.webp",
+        "eidolon": "assets/eidolon/32.webp",
+        "lightcone": "assets/lightcone/32.webp"
+    },
+    {
+        "id": 33,
+        "name": "Jingliu",
+        "type": "ice",
+        "path": "destruction",
+        "faction": "high_cloud_quintet",
+        "img": "assets/image/33.webp",
+        "icon": "assets/icon/33.webp",
+        "eidolon": "assets/eidolon/33.webp",
+        "lightcone": "assets/lightcone/33.webp"
+    },
+    {
+        "id": 34,
+        "name": "Topaz",
+        "type": "fire",
+        "path": "hunt",
+        "faction": "interastral_peace_corporation",
+        "img": "assets/image/34.webp",
+        "icon": "assets/icon/34.webp",
+        "eidolon": "assets/eidolon/34.webp",
+        "lightcone": "assets/lightcone/34.webp"
+    },
+    {
+        "id": 35,
+        "name": "Hanya",
+        "type": "physical",
+        "path": "harmony",
+        "faction": "ghost_hunting_squad",
+        "img": "assets/image/35.webp",
+        "icon": "assets/icon/35.webp",
+        "eidolon": "assets/eidolon/35.webp",
+        "lightcone": "assets/lightcone/35.webp"
+    },
+    {
+        "id": 36,
+        "name": "Huohuo",
+        "type": "wind",
+        "path": "abundance",
+        "faction": "ghost_hunting_squad",
+        "img": "assets/image/36.webp",
+        "icon": "assets/icon/36.webp",
+        "eidolon": "assets/eidolon/36.webp",
+        "lightcone": "assets/lightcone/36.webp"
+    },
+    {
+        "id": 37,
+        "name": "Argenti",
+        "type": "physical",
+        "path": "erudition",
+        "faction": "outside_forces",
+        "img": "assets/image/37.webp",
+        "icon": "assets/icon/37.webp",
+        "eidolon": "assets/eidolon/37.webp",
+        "lightcone": "assets/lightcone/37.webp"
+    },
+    {
+        "id": 38,
+        "name": "Xueyi",
+        "type": "quantum",
+        "path": "destruction",
+        "faction": "ghost_hunting_squad",
+        "img": "assets/image/38.webp",
+        "icon": "assets/icon/38.webp",
+        "eidolon": "assets/eidolon/38.webp",
+        "lightcone": "assets/lightcone/38.webp"
+    },
+    {
+        "id": 39,
+        "name": "Ruan Mei",
+        "type": "ice",
+        "path": "harmony",
+        "faction": "herta_space_station",
+        "img": "assets/image/39.webp",
+        "icon": "assets/icon/39.webp",
+        "eidolon": "assets/eidolon/39.webp",
+        "lightcone": "assets/lightcone/39.webp"
+    },
+    {
+        "id": 40,
+        "name": "Dr. Ratio",
+        "type": "imaginary",
+        "path": "hunt",
+        "faction": "interastral_peace_corporation",
+        "img": "assets/image/40.webp",
+        "icon": "assets/icon/40.webp",
+        "eidolon": "assets/eidolon/40.webp",
+        "lightcone": "assets/lightcone/40.webp"
+    },
+    {
+        "id": 41,
+        "name": "Misha",
+        "type": "ice",
+        "path": "destruction",
+        "faction": "penacony",
+        "img": "assets/image/41.webp",
+        "icon": "assets/icon/41.webp",
+        "eidolon": "assets/eidolon/41.webp",
+        "lightcone": "assets/lightcone/41.webp"
+    },
+    {
+        "id": 42,
+        "name": "Black Swan",
+        "type": "wind",
+        "path": "nihility",
+        "faction": "astral_express",
+        "img": "assets/image/42.webp",
+        "icon": "assets/icon/42.webp",
+        "eidolon": "assets/eidolon/42.webp",
+        "lightcone": "assets/lightcone/42.webp"
+    },
+    {
+        "id": 43,
+        "name": "Sparkle",
+        "type": "quantum",
+        "path": "harmony",
+        "faction": "outside_forces",
+        "img": "assets/image/43.webp",
+        "icon": "assets/icon/43.webp",
+        "eidolon": "assets/eidolon/43.webp",
+        "lightcone": "assets/lightcone/43.webp"
+    },
+    {
+        "id": 44,
+        "name": "Gallagher",
+        "type": "fire",
+        "path": "abundance",
+        "faction": "penacony",
+        "img": "assets/image/44.webp",
+        "icon": "assets/icon/44.webp",
+        "eidolon": "assets/eidolon/44.webp",
+        "lightcone": "assets/lightcone/44.webp"
+    },
+    {
+        "id": 45,
+        "name": "Acheron",
+        "type": "lightning",
+        "path": "nihility",
+        "faction": "outside_forces",
+        "img": "assets/image/45.webp",
+        "icon": "assets/icon/45.webp",
+        "eidolon": "assets/eidolon/45.webp",
+        "lightcone": "assets/lightcone/45.webp"
+    },
+    {
+        "id": 46,
+        "name": "Aventurine",
+        "type": "imaginary",
+        "path": "preservation",
+        "faction": "interastral_peace_corporation",
+        "img": "assets/image/46.webp",
+        "icon": "assets/icon/46.webp",
+        "eidolon": "assets/eidolon/46.webp",
+        "lightcone": "assets/lightcone/46.webp"
+    },
+    {
+        "id": 47,
+        "name": "Robin",
+        "type": "physical",
+        "path": "harmony",
+        "faction": "penacony",
+        "img": "assets/image/47.webp",
+        "icon": "assets/icon/47.webp",
+        "eidolon": "assets/eidolon/47.webp",
+        "lightcone": "assets/lightcone/47.webp"
+    },
+    {
+        "id": 48,
+        "name": "Boothill",
+        "type": "physical",
+        "path": "hunt",
+        "faction": "outside_forces",
+        "img": "assets/image/48.webp",
+        "icon": "assets/icon/48.webp",
+        "eidolon": "assets/eidolon/48.webp",
+        "lightcone": "assets/lightcone/48.webp"
+    },
+    {
+        "id": 49,
+        "name": "Firefly",
+        "type": "fire",
+        "path": "destruction",
+        "faction": "stellaron_hunters",
+        "img": "assets/image/49.webp",
+        "icon": "assets/icon/49.webp",
+        "eidolon": "assets/eidolon/49.webp",
+        "lightcone": "assets/lightcone/49.webp"
+    },
+    {
+        "id": 50,
+        "name": "Jade",
+        "type": "quantum",
+        "path": "erudition",
+        "faction": "interastral_peace_corporation",
+        "img": "assets/image/50.webp",
+        "icon": "assets/icon/50.webp",
+        "eidolon": "assets/eidolon/50.webp",
+        "lightcone": "assets/lightcone/50.webp"
+    },
+    {
+        "id": 51,
+        "name": "Yunli",
+        "type": "physical",
+        "path": "destruction",
+        "faction": "xianzhou_wardance",
+        "img": "assets/image/51.webp",
+        "icon": "assets/icon/51.webp",
+        "eidolon": "assets/eidolon/51.webp",
+        "lightcone": "assets/lightcone/51.webp"
+    },
+    {
+        "id": 52,
+        "name": "Jiaoqiu",
+        "type": "fire",
+        "path": "nihility",
+        "faction": "foreign_xianzhou",
+        "img": "assets/image/52.webp",
+        "icon": "assets/icon/52.webp",
+        "eidolon": "assets/eidolon/52.webp",
+        "lightcone": "assets/lightcone/52.webp"
+    },
+    {
+        "id": 53,
+        "name": "Moze",
+        "type": "lightning",
+        "path": "hunt",
+        "faction": "foreign_xianzhou",
+        "img": "assets/image/53.webp",
+        "icon": "assets/icon/53.webp",
+        "eidolon": "assets/eidolon/53.webp",
+        "lightcone": "assets/lightcone/53.webp"
+    },
+    {
+        "id": 54,
+        "name": "Feixiao",
+        "type": "wind",
+        "path": "hunt",
+        "faction": "foreign_xianzhou",
+        "img": "assets/image/54.webp",
+        "icon": "assets/icon/54.webp",
+        "eidolon": "assets/eidolon/54.webp",
+        "lightcone": "assets/lightcone/54.webp"
+    },
+    {
+        "id": 55,
+        "name": "Lingsha",
+        "type": "fire",
+        "path": "abundance",
+        "faction": "xianzhou_wardance",
+        "img": "assets/image/55.webp",
+        "icon": "assets/icon/55.webp",
+        "eidolon": "assets/eidolon/55.webp",
+        "lightcone": "assets/lightcone/55.webp"
+    },
+    {
+        "id": 56,
+        "name": "Rappa",
+        "type": "imaginary",
+        "path": "erudition",
+        "faction": "outside_forces",
+        "img": "assets/image/56.webp",
+        "icon": "assets/icon/56.webp",
+        "eidolon": "assets/eidolon/56.webp",
+        "lightcone": "assets/lightcone/56.webp"
+    },
+    {
+        "id": 57,
+        "name": "Sunday",
+        "type": "imaginary",
+        "path": "harmony",
+        "faction": "penacony",
+        "img": "assets/image/57.webp",
+        "icon": "assets/icon/57.webp",
+        "eidolon": "assets/eidolon/57.webp",
+        "lightcone": "assets/lightcone/57.webp"
+    },
+    {
+        "id": 58,
+        "name": "Fugue",
+        "type": "fire",
+        "path": "nihility",
+        "faction": "local_xianzhou",
+        "img": "assets/image/58.webp",
+        "icon": "assets/icon/58.webp",
+        "eidolon": "assets/eidolon/58.webp",
+        "lightcone": "assets/lightcone/58.webp"
+    },
+    {
+        "id": 59,
+        "name": "The Herta",
+        "type": "ice",
+        "path": "erudition",
+        "faction": "herta_space_station",
+        "img": "assets/image/59.webp",
+        "icon": "assets/icon/59.webp",
+        "eidolon": "assets/eidolon/59.webp",
+        "lightcone": "assets/lightcone/59.webp"
+    },
+    {
+        "id": 60,
+        "name": "Aglaea",
+        "type": "lightning",
+        "path": "remembrance",
+        "faction": "amphoreus",
+        "img": "assets/image/60.webp",
+        "icon": "assets/icon/60.webp",
+        "eidolon": "assets/eidolon/60.webp",
+        "lightcone": "assets/lightcone/60.webp"
+    },
+    {
+        "id": 61,
+        "name": "Tribbie",
+        "type": "quantum",
+        "path": "harmony",
+        "faction": "amphoreus",
+        "img": "assets/image/61.webp",
+        "icon": "assets/icon/61.webp",
+        "eidolon": "assets/eidolon/61.webp",
+        "lightcone": "assets/lightcone/61.webp"
+    },
+    {
+        "id": 62,
+        "name": "Mydei",
+        "type": "imaginary",
+        "path": "destruction",
+        "faction": "amphoreus",
+        "img": "assets/image/62.webp",
+        "icon": "assets/icon/62.webp",
+        "eidolon": "assets/eidolon/62.webp",
+        "lightcone": "assets/lightcone/62.webp"
+    },
+    {
+        "id": 63,
+        "name": "Castorice",
+        "type": "quantum",
+        "path": "remembrance",
+        "faction": "amphoreus",
+        "img": "assets/image/63.webp",
+        "icon": "assets/icon/63.webp",
+        "eidolon": "assets/eidolon/63.webp",
+        "lightcone": "assets/lightcone/63.webp"
+    },
+    {
+        "id": 64,
+        "name": "Anaxa",
+        "type": "wind",
+        "path": "erudition",
+        "faction": "amphoreus",
+        "img": "assets/image/64.webp",
+        "icon": "assets/icon/64.webp",
+        "eidolon": "assets/eidolon/64.webp",
+        "lightcone": "assets/lightcone/64.webp"
+    }
+]

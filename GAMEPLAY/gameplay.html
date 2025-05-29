@@ -6,7 +6,23 @@
     <title>Document</title>
     <link rel='stylesheet' href='stylesheets/gameplay-stylesheet.css'>
 </head>
-<body id=''> 
+<body> 
+    <div id='opening-animation'></div>
+    <img id='bg-img' class='darken' width='100%' height='auto' src='assets/background/space.png'>
+     <section id='user-status'>
+        <section>
+            <div id='user-exp-container'>
+                <h6>Lv: <span id='user-lv'></span></h6>
+                <h6>Exp: <span id='user-exp'></span></h6>
+            </div>
+        </section>
+    </section>
+    <section id='user-resources'>
+        <figure>
+            <img src='assets/stellar-jade.webp'>
+        </figure>
+        <p id='stellar-jade-count'></p>
+    </section>
     <div id='enemy-container'></div>
     <section id='character-container'>
         <div class='character-button' id='char-1'></div>
@@ -14,6 +30,14 @@
         <div class='character-button' id='char-3'></div>
         <div class='character-button' id='char-4'></div>
     </section>
+    <form action="home_worlds.php" id='home' method='post'>
+        <div class='navigation'>
+            <figure class='navigation-container'>
+                <img src='assets/navigation/outmap.png'>
+                <figcaption>Home Screen</figcaption>
+            </figure>
+        </div>
+    </form>
 </body>
 <script src='scripts/gameplay.js'></script>
 </html>

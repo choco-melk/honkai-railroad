@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@font-face {
+    font-family: 'PFDinTextPro-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PFDinTextPro-Regular'), url('fonts/PFDinTextPro-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'PFDinTextPro-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PFDinTextPro-Bold'), url('fonts/PFDinTextPro-Bold.woff') format('woff');
+}
+
+   
+@keyframes smooth-fade-in {   
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+@keyframes move-up-down {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 3px;
+    }
+}
+@keyframes lighten {
+    0% {
+      filter: brightness(0%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
+
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.7rem;
+}
+h5 {
+    font-size: 1.5rem;
+}
+h6 {
+    font-size: 1.2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    z-index: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin';
+}
+::placeholder {
+    color: rgb(193, 193, 193);
+}
+/* | Background */
+body {
+    background-color: black;
+    overflow: hidden;    
+}
+.darken {
+    filter: brightness(50%);
+}
+#bg-img {
+    position: sticky;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -3;
+    overflow: hidden;
+}
+
+/* | Start Section */
+#start-container {
+    animation: smooth-fade-in 1s;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 80%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    padding: 1em 3em 3em; 
+    text-align: center;
+    color: white;
+}
+#start-container h4 {
+    margin: 10px;
+    cursor: pointer;
+}
+#start-container #account-container {
+    width: 25ch;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 0.4em 0.5em;
+    border: solid 1px white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+#account-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#account-container img[src='assets/navigation/check-mark.png']{
+    height: 16px;
+    aspect-ratio: 1/1;
+    margin-right: 7px;
+}
+
+
+#logout-container {
+    animation: smooth-fade-in 1s;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+#logout-container img[src='assets/navigation/hoyo-logo.png.png'] {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 5px;
+} 
+
+
+
+
+
+

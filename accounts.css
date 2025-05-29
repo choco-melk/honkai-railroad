@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+@font-face {
+    font-family: 'PFDinTextPro-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PFDinTextPro-Regular'), url('fonts/PFDinTextPro-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'PFDinTextPro-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('PFDinTextPro-Bold'), url('fonts/PFDinTextPro-Bold.woff') format('woff');
+}
+
+   
+@keyframes smooth-fade-in {   
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+@keyframes move-up-down {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 3px;
+    }
+}
+@keyframes lighten {
+    0% {
+      filter: brightness(0%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
+
+h3 {
+    font-size: 2rem;
+}
+h4 {
+    font-size: 1.7rem;
+}
+h5 {
+    font-size: 1.5rem;
+}
+h6 {
+    font-size: 1.2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    z-index: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin';
+}
+::placeholder {
+    color: rgb(193, 193, 193);
+}
+/* | Background */
+body {
+    background-color: black;
+    overflow: hidden;    
+}
+.darken {
+    filter: brightness(50%);
+}
+#bg-img {
+    position: sticky;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -3;
+    overflow: hidden;
+}
+
+/* | Login and Register Forms */
+form {
+    animation: smooth-fade-in 1s;
+    width: 500px;
+    position: fixed;
+    top:50%;
+    left:50%; 
+    transform:translate(-50%, -50%);
+    padding: 1em 3em 3em; 
+    background-color: #f0ecec;
+}
+form h4 {
+    text-align: center;
+    letter-spacing: 3px;
+}
+form input[type='text'], form input[type='password'] {
+    border: solid 1px rgb(193, 193, 193);
+    padding: 0.8em 1em;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 1.0em;
+    font-weight: 600;
+    color: rgb(129, 129, 129);
+}
+form label{
+    color: #ffbf49;
+    font-weight: 800; 
+    text-decoration: none;
+}
+form input[type='submit']{
+    padding: 0.8em 1em;
+    width: 100%;
+    font-size: 1.0em;
+    font-weight: 600;
+    background-color: #ffd484;
+    color: black;
+    cursor: pointer;
+}
+#login {
+    display: block;
+}
+#register {
+    display: none;
+}
+@media screen and (max-width: 768px){
+    form {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+    }
+    form h4 {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+    }
+    form input[type='text'], form input[type='password'], form input[type='submit']{
+        padding: 0.4em 0.5em;
+        margin-bottom: 5px;
+        font-size: 0.85rem;
+    }
+    form label a {
+        font-size: 0.8rem;
+    }
+    form br {
+        display: none;
+    }
+    form input[type='submit'] {
+        margin-top: 20px;
+    }
+    
+
+
+}
+
+
+

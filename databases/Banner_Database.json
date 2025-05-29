@@ -1,0 +1,198 @@
+[
+    {
+        "id": 1,
+        "title": "astral_express",
+        "level-needed": 0,
+        "five_star":[
+            [1, 0], [2, 0], [3, 0], 4, 5, 42
+        ],
+        "four_star":[
+            0
+        ],
+        "three_star":[
+            -1
+        ]
+    },
+    {
+        "id": 2,
+        "title": "stellaron_hunters",
+        "level-needed": 0,
+        "five_star":[
+            [1, 1], 25, 28, 29, 49
+        ],
+        "four_star":[
+            0
+        ],
+        "three_star":[
+            -1
+        ]
+    },
+    {
+        "id": 3,
+        "title": "herta_space_station",
+        "level-needed": 0,
+        "five_star":[
+            6, 7, 8, 39, 59
+        ],
+        "four_star":[
+            0
+        ],
+        "three_star":[
+            -1
+        ]
+    },
+    {
+        "id": 4,
+        "title": "belobog_overworld",
+        "level-needed": 0,
+        "five_star":[
+            11, 12, 17, 19, 30
+        ],
+        "four_star":[
+            0    
+        ],
+        "three_star":[
+            -1
+        ]
+    },
+    {
+        "id": 5,
+        "title": "belobog_underworld",
+        "level-needed": 0,
+        "five_star":[
+            10, 13, 18, 22, 27
+        ],
+        "four_star":[
+            0
+        ],
+        "three_star":[
+            -1
+        ]
+    },
+    {
+        "id": 6,
+        "title": "interastral_peace_corporation",
+        "level-needed": 0,
+        "five_star":[
+            34, 40, 46, 50
+        ],
+        "four_star":[
+            0
+        ],
+        "three_star":[
+            -1
+        ]
+    },
+    {
+        "id": 7,
+        "title": "local_xianzhou",
+        "level-needed": 0,
+        "five_star":[
+            14, 16, 24, 31, 58
+        ],
+        "four_star":[
+            0
+        ],
+        "three_star":[
+            -1
+        ]
+    },
+    {
+        "id": 8,
+        "title": "high_cloud_quintet",
+        "level-needed": 0,
+        "five_star":[
+            [3, 1], 21, 23, 33
+        ],
+        "four_star":[
+            0
+        ],
+        "three_star":[
+            -1
+        ]
+    },
+    {
+        "id": 9,
+        "title": "ghost_hunting_squad",
+        "level-needed": 0,
+        "five_star":[
+            15, 32, 35, 36, 38
+        ],
+        "four_star":[
+            0
+        ],
+        "three_star":[
+            -1
+        ]
+    },
+    {
+        "id": 10,
+        "title": "foreign_xianzhou",
+        "level-needed": 0,
+        "five_star":[
+            26, 52, 53, 54
+        ],
+        "four_star":[
+            0
+        ],
+        "three_star":[
+            -1
+        ]
+    },
+    {
+        "id": 11,
+        "title": "xianzhou_wardance",
+        "level-needed": 0,
+        "five_star":[
+            [2, 1], 20, 51, 55
+        ],
+        "four_star":[
+            0
+        ],
+        "three_star":[
+            -1
+        ]
+    },
+    {
+        "id": 12,
+        "title": "penacony",
+        "level-needed": 0,
+        "five_star":[
+            [1, 2], 41, 44, 47, 57 
+        ],
+        "four_star":[
+            0
+        ],
+        "three_star":[
+            -1
+        ]
+    },
+    {
+        "id": 13,
+        "title": "amphoreus",
+        "level-needed": 0,
+        "five_star":[
+            [1, 3], 60, 61, 62, 63, 64
+        ],
+        "four_star":[
+            0
+        ],
+        "three_star":[
+            -1
+        ]
+    },
+    {
+        "id": 14,
+        "title": "outside_forces",
+        "level-needed": 0,
+        "five_star":[
+            9, 37, 43, 45, 48, 56
+        ],
+        "four_star":[
+            0
+        ],
+        "three_star":[
+            -1
+        ]
+    }
+]
